@@ -28,4 +28,4 @@ if(userAge < 18 ){
     document.getElementById("result").innerHTML = `Il costo totale del tuo biglietto è : ${costoTot.toFixed(2)}, purtroppo non hai accesso a sconti in quanto non sei né Minorenne né Over 65`;
 }
 
-//document.getElementById("result").innerHTML = `Il costo totale del tuo biglietto è : ${costoTot.toFixed(2)}`;
+//document.getElementById("result").innerHTML = `Il costo totale del tuo biglietto è : ${costoTot.toFixed(2)}`; Se voglio stampare solo OUTPUT ALLA FINE E NON PER CONDIZIONE SINGOLA
