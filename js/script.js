@@ -3,11 +3,13 @@ let costoTot = 0;
 const scontoMin = 0.20;
 const scontoAnz = 0.40;
 
-const userKm = prompt ("Dimmi quanti Km devi fare col tuo biglietto :"); //string
-const userAge = prompt("Dimmi quanti anni hai : "); //string
+let userKm = prompt ("Dimmi quanti Km devi fare col tuo biglietto :"); //string
+userKm = parseInt(userKm);
+let userAge = prompt("Dimmi quanti anni hai : "); //string
+userAge = parseInt(userAge);
 
 if(userAge < 18 ){
-    costoTot = userKm * costoKm; //number, in quanto la moltiplicazione mi converte in automatica la stringa
+    costoTot = userKm * costoKm; //number
     console.log(costoTot, typeof costoTot);
     let scontoTot = (costoTot) * scontoMin;
     console.log(scontoTot);
